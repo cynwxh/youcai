@@ -1,0 +1,159 @@
+main{
+    width: 100%;
+    background: #f1f1f1;
+}
+main .login{
+    width: 100%;
+    height: 0.8rem;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+main .line{
+    width: 100%;
+    height: 0.03rem;
+    display: flex;
+}
+main .line .line-left-box,main .line .line-right-box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+main .line .line-left,main .line .line-right{
+    width: 100%;
+    height: 100%;
+    background: #f19344;
+    transition: 0.5s;
+}
+main .line .line-right{
+    background: #f19344;
+    margin-left: -100%;
+}
+main .login div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem;
+}
+main .view{
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+main .view .card{
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    margin-left: -100%;
+    transition: 0.5s;
+}
+main .view .card .signin-card,main .view .card .register-card{
+    width: 50%;
+    padding: 0.3rem 0.3rem 0.6rem;
+    background: #fff;
+}
+main .view .card .signin-card h2{
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+main .view .card .signin-card ul,main .view .card .register-card ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0rem;
+}
+main .view .card .signin-card form ul li,main .view .card .register-card form ul li{
+    width: 1.59rem;
+    height: 0.6rem;
+    border: 1px solid #dbdbdb;
+    font-size: 0.24rem;
+    color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.04rem;
+}
+
+main .view .card .signin-card form input,main .view .card .register-card form input{
+    width: 100%;
+    height: 0.6rem;
+    border: 1px solid #eeeeee;
+    margin-top: 0.2rem;
+    padding:0.2rem;
+    box-sizing: border-box; 
+    border-radius: 0.04rem;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+}
+main .view .card .signin-card form input:focus,main .view .card .register-card form input:focus{
+    border-color: #f19344;
+}
+main .view .card .signin-card form input[type="text"]{
+    margin-top: 0;
+}
+main .view .card .signin-card a{
+    display: block;
+    text-align: right;
+    font-size: 0.18rem;
+    color: #999;
+    margin: 0.2rem 0;
+}
+main .view .card .signin-card .signin{
+    width: 100%;
+    height: 0.8rem;
+    background: #f39339;
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+    text-align:center;
+    font-weight: 700;
+    margin-top: 0.6rem;
+}
+main .view .card .register-card form ul{
+    padding:0.2rem 0;
+}
+main .view .card .register-card form .phone-box{
+    width: 100%;
+    height: 0.64rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid #eeeeee;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+    border-radius: 0.04rem;
+}
+main .view .card .register-card form .phone-box .select{
+    width: 0.86rem;
+    height: 0.59rem;
+    background: #f9f9f9;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .view .card .register-card form .phone-box .select img{
+    max-width: 100%;
+}
+main .view .card .register-card form .phone-box .select span{
+    width:0;
+    height:0;
+    border-width:0.1rem 0.1rem 0;
+    border-style:solid;
+    border-color:#333 transparent transparent;
+    margin:40px auto;
+}
+main .view .card .register-card form .phone-box .phone{
+    width: 6.04rem;
+    margin: 0;
+    border:0;
+}
