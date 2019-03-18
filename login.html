@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html lang="zh" rem="750">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录-注册</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -35,10 +35,10 @@
                 <p>选课中心</p>
                 <div class="box">
                     <ul>
-                        <li>家长VIP服务</li>
-                        <li>1对1专属家教</li>
-                        <li>1对1留学教练</li>
-                        <li>挑选与预约老师</li>
+                        <li><a href="">家长VIP服务</a></li>
+                        <li><a href="">1对1专属家教</a></li>
+                        <li><a href="">1对1留学教练</a></li>
+                        <li><a href="">挑选与预约老师</a></li>
                     </ul>
                 </div>
             </li>
@@ -46,10 +46,10 @@
                 <p>免费公开课</p>
                 <div class="box">
                     <ul>
-                        <li>名校学霸学习方法分享会</li>
-                        <li>欧美留学生活分享会</li>
-                        <li>海外大学招生咨询会</li>
-                        <li>留学申请经验分享会</li>
+                        <li><a href="">名校学霸学习方法分享会</a></li>
+                        <li><a href="">欧美留学生活分享会</a></li>
+                        <li><a href="">海外大学招生咨询会</a></li>
+                        <li><a href="">留学申请经验分享会</a></li>
                     </ul>
                 </div>
             </li>
@@ -57,10 +57,10 @@
                 <p>线下活动</p>
                 <div class="box">
                     <ul>
-                        <li>海外游学活动</li>
-                        <li>全球500强名企体验活动</li>
-                        <li>高中升学主题分享会</li>
-                        <li>留学申请经验分享会</li>
+                        <li><a href="">海外游学活动</a></li>
+                        <li><a href="">全球500强名企体验活动</a></li>
+                        <li><a href="">高中升学主题分享会</a></li>
+                        <li><a href="">留学申请经验分享会</a></li>
                     </ul>
                 </div>
             </li>
@@ -68,9 +68,9 @@
                 <p>优才商城</p>
                 <div class="box">
                     <ul>
-                        <li>在线授课设备</li>
-                        <li>在线授课系统</li>
-                        <li>教员VIP年卡</li>
+                        <li><a href="">在线授课设备</a></li>
+                        <li><a href="">在线授课系统</a></li>
+                        <li><a href="">教员VIP年卡</a></li>
                     </ul>
                 </div>
             </li>
@@ -95,37 +95,59 @@
                 <div class="register-card">
                     <form action="">
                         <ul class="identity">
-                            <li>学生</li>
-                            <li>老师</li>
-                            <li>家长</li>
-                            <li>其他</li>
+                            <li value="1">学生</li>
+                            <li value="2">老师</li>
+                            <li value="3">家长</li>
+                            <li value="4">其他</li>
                         </ul>
                         <input type="text" class="user" placeholder="请输入昵称">
                         <div class="phone-box">
-                            <div class="select">
-                                <img src="" alt=""><span></span>
+                            <div class="select-prefix" value="+86">
+                                <div class="country"><img src="img/cn.jpg" alt=""></div><span></span>
                             </div>
-                            <input class="phone" type="text" placeholder="请输入手机号码">
+                            <input class="phone" type="number" placeholder="请输入手机号">
+                            <ul class="select-box">
+                                <li value="+87">
+                                    <div class="country"><img src="img/aomen.png" alt=""></div><span>+87</span>
+                                </li>
+                                <li value="+88">
+                                    <div class="country"><img src="img/astreet.png" alt=""></div><span>+88</span>
+                                </li>
+                                <li value="+89">
+                                    <div class="country"><img src="img/guo.png" alt=""></div><span>+89</span>
+                                </li>
+                                <li value="+84">
+                                    <div class="country"><img src="img/taiwan.png" alt=""></div><span>+84</span>
+                                </li>
+                            </ul>
                         </div>
-                        
+                        <div class="phone-code-box">
+                            <input class="code" type="text" placeholder="请输入手机验证码">
+                            <div class="code-box">获取验证码</div>
+                        </div>
+                        <input class="password" type="password" placeholder="请输入密码">
+                        <input class="repassword" type="password" placeholder="重新输入密码">
+                        <div class="check">
+                            <input type="checkbox">阅读并同意 <a href="javascript:;">《优才互联用户注册协议》</a>
+                        </div>
                     </form>
+                    <div class="register">注 册</div>
                 </div>
                 <div class="signin-card">
                     <h2>欢迎您来到优才互联，请登录</h2>
                     <form action="">
                         <ul class="identity">
-                            <li>学生</li>
-                            <li>老师</li>
-                            <li>家长</li>
-                            <li>其他</li>
+                            <li value="1">学生</li>
+                            <li value="2">老师</li>
+                            <li value="3">家长</li>
+                            <li value="4">其他</li>
                         </ul>
-                        <input type="text" placeholder="请输入手机号">
-                        <input type="password" placeholder="请输入密码">
+                        <input class="phone" type="number" placeholder="请输入手机号">
+                        <input class="password" type="password" placeholder="请输入密码">
                     </form>
                     <a href="">忘记密码？</a>
-                    <div class="signin">登 录</div>
+                    <div class="signin">登录</div>
                 </div>
-
             </div>
         </div>
     </main>
@@ -136,19 +158,216 @@
                 $(".line-left").css("margin-left", "100%")
                 setTimeout(function () {
                     $(".line-right").css("margin-left", "0");
-                    $(".view .card").css("margin-left","0");
+                    $(".view .card").css("margin-left", "0");
                 }, 500)
             } else {
                 $(".line-right").css("margin-left", "-100%");
                 setTimeout(function () {
                     $(".line-left").css("margin-left", "0");
-                    $(".view .card").css("margin-left","-100%")
+                    $(".view .card").css("margin-left", "-100%")
                 }, 500)
             }
         })
+
+
+        var signin = {}; //登录页面提交对象
+        var register = {}; //注册页面提交对象
+        // 进入页面选择默认角色
+        $(function () {
+            $(".signin-card ul.identity li").eq(0).addClass("active");
+            signin.identity = $(".signin-card ul.identity li").eq(0).attr("value");
+            $(".register-card ul.identity li").eq(0).addClass("active");
+            register.identity = $(".register-card ul.identity li").eq(0).attr("value");
+        })
+        // 点击选择登录角色
+        $(".signin-card ul.identity li").on("click", function () {
+            $(".signin-card ul.identity li").removeClass("active")
+            $(this).addClass("active");
+            signin.identity = $(this).attr("value");
+        })
+        // 点击选择注册角色
+        $(".register-card ul.identity li").on("click", function () {
+            $(".register-card ul.identity li").removeClass("active")
+            $(this).addClass("active");
+            register.identity = $(this).attr("value");
+        })
+
+        // 判断是否输入手机号，密码使登录按钮变为可点击状态
+        $(".signin-card form .phone,.signin-card form .password").on("input propertychange", function () {
+            if ($(".signin-card form .phone").val() && $(".signin-card form .password").val()) {
+                $(".signin-card .signin").css("background", "#f39339");
+                $(".signin-card .signin").css("color", "#fff");
+            } else {
+                $(".signin-card .signin").css("background", "#e4e4e4");
+                $(".signin-card .signin").css("color", "#999");
+            }
+        })
+
+        // 点击登录
+        $(".signin-card .signin").on("click", function () {
+            if (!(/^[1][3,4,5,6,7,8][0-9]{9}$/).test($(".signin-card form .phone").val())) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("手机号码有误！");
+                });
+                return false;
+            } else {
+                signin.phone = $(".signin-card form .phone").val();
+            }
+            if (!$(".signin-card form .password").val()) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("请输入密码！");
+                });
+                return false;
+            } else {
+                signin.password = $(".signin-card form .password").val()
+            }
+            $.ajax({
+                url: "",
+                type: "POST",
+                data: signin,
+                success: function (res) {
+                    console.log(res)
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            })
+        })
+        // 点击号码前缀弹出下拉菜单
+        $(".register-card form .phone-box .select-prefix").on("click", function () {
+            if ($(".register-card form .phone-box .select-box").height() == 0) {
+                $(".register-card form .phone-box .select-box").css("height", "4rem");
+                $(".register-card form .phone-box .select-box").css("overflow", "auto");
+            } else {
+                $(".register-card form .phone-box .select-box").css("height", "0");
+                $(".register-card form .phone-box .select-box").css("overflow", "hidden");
+            }
+        })
+        // 点击选择号码前缀
+        $(".register-card form .phone-box .select-box li").on("click", function () {
+            var country = $(this).find(".country img").attr("src");
+            $(".register-card form .phone-box .select-prefix .country img").attr("src", country);
+            $(".register-card form .phone-box .select-prefix").attr("value", "+" + $(this).val());
+            $(".register-card form .phone-box .select-box").css("height", "0");
+            $(".register-card form .phone-box .select-box").css("overflow", "hidden");
+        })
+        // 点击发送验证码
+        $(".register-card form .phone-code-box .code-box").on("click", function () {
+            if ($(".register-card form .phone-code-box .code-box").text() == "获取验证码") {
+                var i = 60;
+                $(".register-card form .phone-code-box .code-box").css("background", "#e4e4e4");
+                $(".register-card form .phone-code-box .code-box").css("color", "#666");
+                $(".register-card form .phone-code-box .code-box").text(i + "s")
+                getCode = setInterval(function () {
+                    i--;
+                    $(".register-card form .phone-code-box .code-box").text(i + "s")
+                    if (i == 0) {
+                        clearInterval(getCode);
+                        $(".register-card form .phone-code-box .code-box").text("获取验证码");
+                        $(".register-card form .phone-code-box .code-box").css("color", "#fff");
+                        $(".register-card form .phone-code-box .code-box").css("background", "#f5942a");
+                    }
+                }, 1000);
+            }
+        })
+        // 点击协议
+        $(".register-card form .check a").on("click", function () {
+            layui.use('layer', function () {
+                var layer = layui.layer;
+                layer.open({
+                    type: 1,
+                    title: "优才互联用户注册协议",
+                    area: ['6rem', '4rem'], //宽高
+                    content: '协议内容',
+                    skin: "content"
+                });
+            });
+        })
+        // 检测是否输入昵称，手机号，验证码，密码，同意用户协议使注册按钮变为可点击状态
+        $(
+            ".register-card form .user,.register-card form .phone,.register-card form .code,.register-card form .password,.register-card form .repassword,.register-card form .check input[type='checkbox']"
+        ).on("input propertychange", function () {
+            if ($(".register-card form .user").val() && $(".register-card form .phone").val() && $(
+                    ".register-card form .code").val() && $(".register-card form .password").val() && $(
+                    ".register-card form .repassword").val() && $(
+                    ".register-card form .check input[type='checkbox']").prop("checked")) {
+                $(".register-card .register").css("background", "#f39339");
+                $(".register-card .register").css("color", "#fff");
+            } else {
+                $(".register-card .register").css("background", "#e4e4e4");
+                $(".register-card .register").css("color", "#999");
+            }
+        })
+        // 点击注册
+        $(".register-card .register").on("click", function () {
+            if (!$(".register-card form .user").val()) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("请输入昵称！");
+                });
+                return false;
+            } else {
+                register.user = $(".register-card form .user").val()
+            }
+            if (!(/^[1][3,4,5,6,7,8][0-9]{9}$/).test($(".register-card form .phone").val())) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("手机号码有误！");
+                });
+                return false;
+            } else {
+                register.phone = $(".register-card form .phone").val()
+            }
+            if (!$(".register-card form .code").val()) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("请输入验证码！");
+                });
+                return false;
+            } else {
+                register.code = $(".register-card form .code").val()
+            }
+            if (!$(".register-card form .password").val()) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("请输入密码！");
+                });
+                return false;
+                if (!$(".register-card form .repassword").val()) {
+                    layui.use('layer', function () {
+                        var layer = layui.layer;
+                        layer.msg("请重复输入密码！");
+                    });
+                    return false;
+                }
+            } else {
+                register.password = $(".register-card form .password").val()
+            }
+            if (!$(".register-card form .check input[type='checkbox']").prop("checked")) {
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    layer.msg("请勾选同意用户注册协议！");
+                });
+            } else {
+                register.check = true;
+            }
+            $.ajax({
+                url: "",
+                type: "POST",
+                data: register,
+                success: function (res) {
+                    console.log(res)
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            })
+        })
     </script>
     <footer>
-
+        Copyright © 1998 - 2018 Talenet. All Rights Reserved
     </footer>
     <script src="js/common.js"></script>
 </body>

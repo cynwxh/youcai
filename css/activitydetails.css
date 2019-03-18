@@ -1,0 +1,193 @@
+main {
+    width: 100%;
+    background: #f1f1f1;
+}
+main .desc{
+    background: #fff;
+}
+main .desc .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+}
+main .desc .container .top{
+    width: 100%;
+    overflow: hidden;
+}
+main .desc .container .top .img{
+    width: 2.4rem;
+    height: 1.6rem;
+    float: left;
+    margin: 0 0.2rem 0 0;
+}
+main .desc .container .top h1{
+    font-size: 0.26rem;
+    font-weight: 700;
+    color: #404040;
+    margin-bottom: 0.2rem;
+}
+main .desc .container .top {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #999999;
+}
+main .desc .container .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0.2rem;
+}
+main .desc .container .bottom p{
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+main .ticket,main .introduce,main .guide{
+    width: 100%;
+    padding:0.2rem 0;
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    background: #fff;
+}
+main .ticket .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .container .title{
+    width: 100%;
+    height: 0.66rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+main .container .title h1{
+    width: 100%;
+    border-left: 1px solid #f39339;
+    font-size: 0.28rem;
+    color: #404040;
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+}
+main .ticket .container ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+main .ticket .container ul li {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+main .ticket .container ul li .left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main .ticket .container ul li .left p:first-child{
+    font-size: 0.26rem;
+    color: #404040;
+}
+main .ticket .container ul li .left p:last-child{
+    font-size: 0.16rem;
+    color: #666;
+}
+main .ticket .container ul li .right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main .ticket .container ul li .right .num-box{
+    width: 1.34rem;
+    height: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main .ticket .container ul li .right .num-box .button{
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+main .ticket .container ul li .right .num-box .num{
+    width: 0.6rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    color: #999;
+    font-size: 0.18rem;
+}
+main .ticket .container ul li .right .money{
+    font-size: 0.16rem;
+    color: #f63636;
+}
+main .ticket .container .footer{
+    width: 100%;
+    height: 0.56rem;
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .ticket .container .footer .total-box span{
+    font-size: 0.2rem;
+    color: #666;
+}
+main .ticket .container .footer .total-box .total{
+    color: #f63636;
+}
+main .ticket .container .footer .button-box{
+    width: 3.04rem;
+    height: 0.56rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .ticket .container .footer .button-box .button{
+    width: 1.42rem;
+    height: 100%;
+    background: #f1f1f1;
+    border-radius: 0.1rem;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem;
+}
+main .ticket .container .footer .button-box .button:last-child{
+    background: #f39339;
+    color: #fff;
+}
+main .container .content{
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+}
+main .container .content p{
+    font-size: 0.2rem;
+    line-height: 0.36rem;
+    color: #999;
+}

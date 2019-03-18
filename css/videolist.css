@@ -1,0 +1,291 @@
+main {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+main .video {
+    width: 100%;
+    height: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+main .line {
+    width: 100%;
+    height: 0.03rem;
+    display: flex;
+}
+
+main .line .line-left-box,
+main .line .line-right-box {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .line .line-left,
+main .line .line-right {
+    width: 100%;
+    height: 100%;
+    background: #f19344;
+    transition: 0.5s;
+}
+
+main .line .line-right {
+    background: #f19344;
+    margin-left: -100%;
+}
+
+main .video div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.24rem;
+}
+
+main .view {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+
+main .view .card {
+    width: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    margin-left: -100%;
+    transition: 0.5s;
+}
+
+main .view .card .liveback-card,
+main .view .card .lecture-card {
+    width: 50%;
+    padding: 0.3rem 0.3rem 0rem;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 0.6rem;
+}
+
+main .view .card ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .view .card ul li {
+    width: 100%;
+    height: 2.15rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+main .view .card ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .view .card ul li a .img {
+    width: 2.6rem;
+    height: 1.74rem;
+    border-radius: 0.1rem;
+}
+
+main .view .card ul li a .word {
+    width: 4.08rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .view .card ul li a .word h4 {
+    font-size: 0.24rem;
+    font-weight: 700;
+    color: #333;
+}
+
+main .view .card ul li a .word p {
+    font-size: 0.2rem;
+    color: #999;
+    margin-top: 0.16rem;
+}
+
+main .view .card ul li a .word .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0.14rem;
+}
+
+main .view .card ul li a .word .bottom .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .view .card ul li a .word .bottom .left span:first-child {
+    font-size: 0.22rem;
+    color: #f39339;
+}
+
+main .view .card ul li a .word .bottom .left span:last-child {
+    font-size: 0.2rem;
+    color: #666;
+}
+
+main .view .card ul li a .word .bottom .right {
+    width: 2.24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .view .card ul li a .word .bottom .right .button {
+    width: 1.02rem;
+    height: 0.42rem;
+    font-size: 0.22rem;
+    border-radius: 0.04rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .view .card ul li a .word .bottom .right .button:first-child {
+    background: #f39339;
+    color: #fff;
+}
+
+main .view .card ul li a .word .bottom .right .button:last-child {
+    background: #f1f1f1;
+    color: #999;
+}
+
+main .view .card .page {
+    width: 4.77rem;
+    height: 0.32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.6rem auto;
+}
+
+main .view .card .page a {
+    font-size: 0.22rem;
+    color: #999;
+}
+
+main .view .card .page ul {
+    width: 2.1rem;
+    height: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .view .card .page ul li {
+    height: 100%;
+    border: 0;
+}
+
+main .view .card .page ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 0.2rem;
+}
+
+main .view .card .page ul li a.active {
+    width: 0.32rem;
+    height: 0.32rem;
+    border-radius: 50%;
+    background: #f39339;
+    color: #fff;
+}
+
+main .view .card .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    z-index: -1;
+}
+
+main .view .card .bg .popup {
+    width: 6.9rem;
+    height: 6.96rem;
+    padding: 0.6rem 0.2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    border-radius: 0.1rem;
+}
+main .view .card .bg .popup h1{
+    font-size: 0.3rem;
+    color: #333;
+}
+main .view .card .bg .popup h2{
+    font-size: 0.28rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+main .view .card .bg .popup form{
+    margin-top:0.2rem;
+    width: 100%;
+    color: #f63636;
+}
+main .view .card .bg .popup form input{
+    width: 97%;
+    height: 0.6rem;
+    border-radius: 0.04rem;
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    margin-top: 0.2rem;
+    color: #333;
+}
+main .view .card .bg .popup form textarea{
+    width: 97%;
+    height: 1.8rem;
+    border-radius: 0.04rem;
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    margin-top: 0.2rem;
+    color: #333;
+}
+main .view .card .bg .popup .button{
+    width: 100%;
+    height: 0.8rem;
+    background: #f1f1f1;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    border-radius: 0.04rem;
+}
+main .view .card .bg .popup .off{
+    position: absolute;
+    right: 0.2rem;
+    top: 0.15rem;
+    font-size: 0.36rem;
+}

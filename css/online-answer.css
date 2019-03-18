@@ -1,0 +1,54 @@
+main{
+    width: 100%;
+    background: #f1f1f1;
+}
+.content{
+    width: 100%;
+    background: #fff;
+    border-top: #e4e4e4;
+}
+.content .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+}
+.content .container p{
+    font-size: 0.2rem;
+    color:#666;
+    margin-top: 0.4rem;
+}
+.content .container form ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.content .container form ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.4rem 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f1f1f1;
+}
+.content .container form ul li h4{
+    font-size: 0.22rem;
+    color: 333;
+    font-weight: 700;
+}
+.content .container form ul li .answer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+.content .container form ul li .answer label{
+    font-size: 0.18rem;
+    line-height: 0.36rem;
+    color: #666;
+}

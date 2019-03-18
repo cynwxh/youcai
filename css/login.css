@@ -5,7 +5,6 @@ main{
 main .login{
     width: 100%;
     height: 0.8rem;
-    border-top: 1px solid #eaeaea;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +57,7 @@ main .view .card .signin-card,main .view .card .register-card{
     width: 50%;
     padding: 0.3rem 0.3rem 0.6rem;
     background: #fff;
+    box-sizing: border-box;
 }
 main .view .card .signin-card h2{
     font-size: 0.3rem;
@@ -69,6 +69,7 @@ main .view .card .signin-card ul,main .view .card .register-card ul{
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem 0rem;
+    box-sizing: border-box;
 }
 main .view .card .signin-card form ul li,main .view .card .register-card form ul li{
     width: 1.59rem;
@@ -80,6 +81,10 @@ main .view .card .signin-card form ul li,main .view .card .register-card form ul
     justify-content: center;
     align-items: center;
     border-radius: 0.04rem;
+}
+main .view .card .signin-card form ul li.active,main .view .card .register-card form ul li.active{
+    border-color:#f5932a;
+    color: #f5932a;
 }
 
 main .view .card .signin-card form input,main .view .card .register-card form input{
@@ -101,26 +106,28 @@ main .view .card .signin-card form input[type="text"]{
 }
 main .view .card .signin-card a{
     display: block;
-    text-align: right;
+    width: 1.1rem;
+    float: right;
     font-size: 0.18rem;
     color: #999;
     margin: 0.2rem 0;
 }
-main .view .card .signin-card .signin{
+main .view .card .signin-card .signin,main .view .card .register-card .register{
     width: 100%;
     height: 0.8rem;
-    background: #f39339;
-    color: #fff;
+    background: #e4e4e4;
+    color: #999;
     font-size: 0.28rem;
-    line-height: 0.8rem;
-    text-align:center;
     font-weight: 700;
     margin-top: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main .view .card .register-card form ul{
     padding:0.2rem 0;
 }
-main .view .card .register-card form .phone-box{
+main .view .card .register-card form .phone-box,main .view .card .register-card form .phone-code-box{
     width: 100%;
     height: 0.64rem;
     display: flex;
@@ -130,30 +137,112 @@ main .view .card .register-card form .phone-box{
     box-sizing: border-box;
     margin-top: 0.2rem;
     border-radius: 0.04rem;
+    position: relative;
 }
-main .view .card .register-card form .phone-box .select{
+main .view .card .register-card form .phone-box .select-prefix{
     width: 0.86rem;
     height: 0.59rem;
     background: #f9f9f9;
-    padding: 0.2rem;
+    padding: 0.16rem;
     box-sizing: border-box;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-main .view .card .register-card form .phone-box .select img{
+main .view .card .register-card form .phone-box .select-prefix div.country{
+    width: 0.26rem;
+    height: 0.18rem;
+    display: flex;
+}
+main .view .card .register-card form .phone-box .select-prefix div.country img{
     max-width: 100%;
 }
-main .view .card .register-card form .phone-box .select span{
+main .view .card .register-card form .phone-box .select-prefix span{
     width:0;
     height:0;
-    border-width:0.1rem 0.1rem 0;
+    border-width:0.12rem 0.08rem 0;
     border-style:solid;
     border-color:#333 transparent transparent;
-    margin:40px auto;
 }
 main .view .card .register-card form .phone-box .phone{
     width: 6.04rem;
     margin: 0;
     border:0;
+}
+main .view .card .register-card form .phone-box input.phone:focus,main .view .card .register-card form .phone-code-box input.code:focus{
+    border:1px solid #f19344;
+}
+main .view .card .register-card form .phone-box ul.select-box{
+    width: 100%;
+    position: absolute;
+    top: 0.62rem;
+    flex-direction: column;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1;
+    transition: 0.5s;
+    justify-content: flex-start;
+}
+main .view .card .register-card form .phone-box ul.select-box li{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.2rem 0.2rem;
+    box-sizing: border-box;
+    color: #333;
+}
+main .view .card .register-card form .phone-box ul.select-box li .country{
+    width: 0.26rem;
+    height: 0.18rem;
+    margin-right: 0.2rem;
+    display: flex;
+}
+main .view .card .register-card form .phone-box ul.select-box li .country img{
+    max-width: 100%;
+}
+main .view .card .register-card form .phone-code-box input.code{
+    width: 5.38rem;
+    margin: 0;
+    border: 0;
+}
+main .view .card .register-card form .phone-code-box .code-box{
+    width: 1.6rem;
+    height: 0.62rem;
+    padding: 0.18rem;
+    box-sizing: border-box;
+    background: #f5942a;
+    color: #fff;
+    font-size: 0.24rem;
+    display: flex;
+    justify-content: center;
+}
+main .view .card .register-card form .check{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.3rem;
+}
+main .view .card .register-card form .check input{
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 0.1rem;
+    font-size: 0.2rem;
+    margin-top: 0;
+}
+main .view .card .register-card form .check a{
+    font-size: 0.2rem;
+    color: #f5942a;
+    padding: 0 0.1rem;
+}
+
+
+.content{
+    padding: 0.2rem;
+    overflow: hidden;
 }

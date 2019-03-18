@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="zh" rem="750">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优才互联</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+    </script>
+    <script src="layui/layui.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu"></div>
+            <a href="index.html" class="logo"></a>
+            <div class="user">
+                <a href="login.html" class="head"></a>
+                <a href="" class="en"></a>
+            </div>
+        </div>
+        <ul class="select clearfix">
+            <li class="select-child">
+                <a href="index.html">首页</a>
+            </li>
+            <li class="select-child">
+                <p>选课中心</p>
+                <div class="box">
+                    <ul>
+                        <li><a href="">家长VIP服务</a></li>
+                        <li><a href="">1对1专属家教</a></li>
+                        <li><a href="">1对1留学教练</a></li>
+                        <li><a href="">挑选与预约老师</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="select-child">
+                <p>免费公开课</p>
+                <div class="box">
+                    <ul>
+                        <li><a href="">名校学霸学习方法分享会</a></li>
+                        <li><a href="">欧美留学生活分享会</a></li>
+                        <li><a href="">海外大学招生咨询会</a></li>
+                        <li><a href="">留学申请经验分享会</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="select-child">
+                <p>线下活动</p>
+                <div class="box">
+                    <ul>
+                        <li><a href="">海外游学活动</a></li>
+                        <li><a href="">全球500强名企体验活动</a></li>
+                        <li><a href="">高中升学主题分享会</a></li>
+                        <li><a href="">留学申请经验分享会</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="select-child">
+                <p>优才商城</p>
+                <div class="box">
+                    <ul>
+                        <li><a href="">在线授课设备</a></li>
+                        <li><a href="">在线授课系统</a></li>
+                        <li><a href="">教员VIP年卡</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="select-child"><a href="">联系我们</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="headinfo">
+            <div class="container">
+                <div class="head" style="background:url(img/touxiang.jpg) no-repeat center /cover"></div>
+                <div class="info">
+                    <p class="users">优才互联 <span class="iconfont">&#xe64f;</span></p>
+                    <p class="balance">余额：<span>8888</span>优才币&nbsp;&nbsp;积分：<span>55</span>分</p>
+                </div>
+                <div class="button">付费会员入口</div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-this">
+                    <a class="title" href="javascript:;">消息</a>
+                    <dl class="layui-nav-child">
+                        <dd><a id="0" class="child" href="javascript:;">我收到的消息</a></dd>
+                        <dd><a id="1" class="child" href="javascript:;">我发送的消息</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="title" href="javascript:;">账户</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="title" href="javascript:;">评分</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="title" href="javascript:;">订单</a>
+                    <dl class="layui-nav-child">
+                        <dd><a id="0" class="child" href="javascript:;">选课订单</a></dd>
+                        <dd><a id="1" class="child" href="javascript:;">产品订单</a></dd>
+                        <dd><a id="2" class="child" href="javascript:;">活动订单</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="title" href="javascript:;">资料</a>
+                    <dl class="layui-nav-child">
+                        <dd><a id="0" class="child" href="javascript:;">资料</a></dd>
+                        <dd><a id="1" class="child" href="javascript:;">上传头像</a></dd>
+                        <dd><a id="2" class="child" href="javascript:;">修改密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="title" href="javascript:;">成长</a>
+                </li>
+            </ul>
+        </div>
+        <div class="view">
+            <div class="card">
+                <div class="sub-page news">
+                    <div class="sub-page-tab received">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-page-tab send">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                    <div class="word">
+                                        <h4>张瑶</h4>
+                                        <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                    </div>
+                                    <div class="button">回复</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-page account">
+                    <div class="sub-page-tab">
+                        <div class="balance">
+                            <div class="cash">
+                                <p>当前账户余额：<span>8888</span>点<span>（备注：10点=1元人民币）</span></p>
+                            </div>
+                            <h1>充值</h1>
+                            <input type="number" class="recharge" placeholder="请输入充值金额">
+                            <h1>请选择以下支付方式 <span> 充值：</span><span class="money">￥ 0</span></h1>
+                            <div class="pay">
+                                <div class="img wxpay" style="background:url(img/paywxzf.png) no-repeat center /cover"></div>
+                                <div class="img zfbpay" style="background:url(img/payzfb.png) no-repeat center /cover"></div>
+                            </div>
+                        </div>
+                        <div class="rech-box">
+                            <a href="" class="rech button">充值</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-page comment">
+                    <div class="sub-page-tab list">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4>张瑶</h4>
+                                            <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                        </div>
+                                        <div class="button">评价</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="evaluatelist"></div>
+                                        <span>8.5分</span>
+                                        <span class="iconfont">&#xe606;80%</span>
+                                        <span class="iconfont">&#xe63c;</span>
+                                        <span>周一到周五 10：00-18：00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <div class="prev">上一页</div>
+                            <div class="num"><span>10</span><span>/100</span></div>
+                            <div class="next">下一页</div>
+                        </div>
+                    </div>
+                    <div class="sub-page-tab details">
+                        <div class="form">
+                            <div class="top">
+                                <div class="img" style="background:url(img/tou.jpg) no-repeat center /cover"></div>
+                                <div class="word">
+                                    <h4>张瑶</h4>
+                                    <p class="hidden2">ACCA会员，爱尔兰都柏林商学院会计与金融学士学位，主讲科目P1，P3，P5，十年海外工</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="evaluatedetails"></div>
+                                <span>&nbsp;8.5分</span>
+                                <span class="iconfont">&nbsp;&nbsp;&#xe606;80%</span>
+                                <span class="iconfont">&nbsp;&#xe63c;</span>
+                                <span>周一到周五 10：00-18：00</span>
+                            </div>
+                            <div class="scoring-box">
+                                <h2>教师评分：</h2>
+                                <div class="scoring"></div>
+                                <span>点击星星打分</span>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="请输入你的答案！"></textarea>
+                        </div>
+                        <div class="button-box">
+                            <div class="button">评价</div>
+                            <div class="button">返回</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-page order">
+                    <div class="sub-page-tab course">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <div class="prev">上一页</div>
+                            <div class="num"><span>10</span><span>/100</span></div>
+                            <div class="next">下一页</div>
+                        </div>
+                    </div>
+                    <div class="sub-page-tab product">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <div class="prev">上一页</div>
+                            <div class="num"><span>10</span><span>/100</span></div>
+                            <div class="next">下一页</div>
+                        </div>
+                    </div>
+                    <div class="sub-page-tab activity">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="top">
+                                        <div class="img" style="background:url(img/listpic.jpg) no-repeat center /cover"></div>
+                                        <div class="word">
+                                            <h4 class="hidden2">人际关系测试：你的交往协调能力够好吗？</h4>
+                                            <p class="">订单编号 : 20180814035228935518701888
+                                                2018-08-14 03:52:28</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <p>付款金额：<span>￥ 8888.00</span></p>
+                                        <p>交易状态： <span>交易成功</span></p>
+                                        <p>操作：<span class="link">评分</span><span>/删除</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <div class="prev">上一页</div>
+                            <div class="num"><span>10</span><span>/100</span></div>
+                            <div class="next">下一页</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-page data">
+                    <div class="sub-page-tab info">资料</div>
+                    <div class="sub-page-tab upload-head">上传头像</div>
+                    <div class="sub-page-tab password">
+                        <form action="">
+                            <label for="">旧密码<input class="pass" type="password" placeholder="请输入你的旧密码"></label>
+                            <label for="">新密码<input class="newpass" type="password" placeholder="请输入你的新密码"></label>
+                            <label for="">新密码<input class="renewpass" type="password" placeholder="请再次输入你的新密码"></label>
+                        </form>
+                        <div class="button-box">
+                            <div class="button">提 交</div>
+                            <div class="button">取 消</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-page grow">
+                        <div class="layui-inline" id="date"></div>
+                        <form action="">
+                            <label for="">英语成绩：<input type="text" placeholder="请输入英语成绩"></label>
+                            <label for="">数学成绩：<input type="text" placeholder="请输入数学成绩"></label>
+                            <label for="">语文成绩：<input type="text" placeholder="请输入语文成绩"></label>
+                            <label for="">物理成绩：<input type="text" placeholder="请输入物理成绩"></label>
+                            <label for="">化学成绩：<input type="text" placeholder="请输入化学成绩"></label>
+                        </form>
+                        <div class="button-box">
+                            <div class="button">保 存 成 绩</div>
+                            <div class="button">取 消</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright © 1998 - 2018 Talenet. All Rights Reserved
+    </footer>
+    <script>
+        // 评分显示效果
+        layui.use(['rate', 'element', 'layer', 'laydate'], function () {
+            var rate = layui.rate;
+            var layer = layui.layer;
+            var laydate =layui.laydate;
+            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+            //列表评分
+            rate.render({
+                elem: '.evaluatelist',
+                value: 4,
+                readonly: true
+            });
+            //评价内页评分
+            rate.render({
+                elem: '.evaluatedetails',
+                value: 3,
+                readonly: true
+            });
+            //评价内页打分
+            rate.render({
+                elem: '.scoring',
+            });
+            //监听导航点击
+            element.on('nav(demo)', function (elem) {
+                layer.msg(elem.text());
+            });
+            //日历选择插件
+            laydate.render({
+                elem: '#date',
+                position: 'static',
+                change: function(value, date){ //监听日期被切换
+                    console.log(value,date)
+                }
+            });
+        })
+        var index = 0; //导航菜单下标
+        //点击导航菜单切换页面
+        $("main .nav ul.layui-nav .layui-nav-item").on("click", function (e) {
+            $("main .nav ul.layui-nav .layui-nav-item").removeClass("layui-this");
+            $(this).addClass("layui-this")
+            var num = $(this).index();
+            $("main .view .card").css("margin-left", `-${num*100}%`);
+            $(this).find(".layui-nav-child").addClass("layui-show");
+            if (e.target.className == "child") {
+                $(this).find(".layui-nav-child").removeClass("layui-show");
+            }
+            index = num;
+        })
+
+        //点击下拉切换内容
+        $("main .nav ul.layui-nav .layui-nav-item .layui-nav-child dd").on("click", function () {
+            $('.card .sub-page').eq(index).find(".sub-page-tab").eq($(this).index()).show().siblings().hide()
+        })
+        //页面加载默认显示第一个页面
+        $(document).ready(function () {
+            $("main .view .card .sub-page .sub-page-tab").eq(0).show().siblings().hide();
+            $("main .view .card .comment .list").show().siblings().hide();
+        })
+
+        //监听输入金额
+        $("main .view .card .account .balance input").on("input propertychange", function () {
+            $("main .view .card .account .balance h1 span:last-child").text(`￥ ${$(this).val()}`)
+        })
+        //点击支付方式
+        $("main .view .card .account .balance .pay div").on("click", function () {
+            $("main .view .card .account .balance .pay div").css("border", "0");
+            $(this).css("border", "1px solid #f39339");
+        })
+        //点击评价列表按钮
+        $("main .view .card .comment .list ul li").on("click", function (e) {
+            if (e.target.className == "button") {
+                var id = $(this).index();
+                $("main .view .card .comment .list").hide().siblings().show();
+            }
+        })
+        //监听评价详情页输入框
+        var comment = {};
+        $("main .view .card .comment .details .form textarea").on("input propertychange", function () {
+            if ($("main .view .card .comment .details .form textarea").val()) {
+                $("main .view .card .comment .details .button-box .button:first-child").css({
+                    "background": "#f39339",
+                    "color": "#fff"
+                });
+                comment.content = $("main .view .card .comment .details .form textarea").val();
+            } else {
+                $("main .view .card .comment .details .button-box .button:first-child").css({
+                    "background": "#e4e4e4",
+                    "color": "#666"
+                })
+            }
+        })
+        //点击评价详情页评价按钮
+        $("main .view .card .comment .details .button-box .button").on("click", function () {
+            if ($(this).index() == 0) {
+                comment.scoring = $(
+                    "main .view .card .comment .details .form .scoring-box .scoring .layui-rate .layui-inline .layui-icon-rate-solid"
+                ).length;
+                $.ajax({
+                    url: "",
+                    type: "POST",
+                    data: comment,
+                    success: function (res) {
+                        console.log(res)
+                    },
+                    error: function (err) {
+                        console.log(err)
+                    }
+                })
+            } else {
+                $("main .view .card .comment .details").hide().siblings().show();
+            }
+        })
+        //监听密码输入框
+        var pass = {}; //提交密码
+        $(
+            "main .view .card .data .password form label .pass,main .view .card .data .password form label .newpass,main .view .card .data .password form label .renewpass"
+        ).on("input propertychange", function () {
+            if ($("main .view .card .data .password form label .pass").val() && $(
+                    "main .view .card .data .password form label .newpass").val() && $(
+                    "main .view .card .data .password form label .renewpass").val()) {
+                pass.oldpass = $("main .view .card .data .password form label .pass").val();
+                pass.newpass = $("main .view .card .data .password form label .newpass").val();
+                $("main .view .card .data .password .button-box .button:first-child").css({
+                    "background": "#f39339",
+                    "color": "#fff"
+                })
+            } else {
+                $("main .view .card .data .password .button-box .button:first-child").css({
+                    "background": "#e4e4e4",
+                    "color": "#666"
+                })
+            }
+        })
+        //点击提交取消按钮
+        $("main .view .card .data .password .button-box .button").on("click", function () {
+            if ($(this).index() == 0) {
+                if ($("main .view .card .data .password form label .pass").val() && $(
+                        "main .view .card .data .password form label .newpass").val() && $(
+                        "main .view .card .data .password form label .renewpass").val()) {
+                    if ($("main .view .card .data .password form label .newpass").val() == $(
+                            "main .view .card .data .password form label .renewpass").val()) {
+                        $.ajax({
+                            url: "",
+                            type: "POST",
+                            data: pass,
+                            success: function (res) {
+                                console.log(res)
+                            },
+                            error: function (err) {
+                                console.log(err)
+                            }
+                        })
+                    } else {
+                        layer.msg("两次密码输入不一样！")
+                    }
+                } else {
+                    layer.msg("请输入密码！")
+                }
+            } else {
+                console.log("返回")
+                window.history.go(-1)
+            }
+        })
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

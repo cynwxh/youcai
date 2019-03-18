@@ -1,0 +1,101 @@
+main {
+    width: 100%;
+    background: #f1f1f1;
+    padding-bottom: 0.6rem;
+}
+main .activitylist{
+    width: 100%;
+    background: #fff;
+}
+main .activitylist .container ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+main .activitylist .container ul li{
+    width: 100%;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+main .activitylist .container ul li a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+main .activitylist .container ul li a .top{
+    width: 100%;
+    height: 2.25rem;
+    overflow: hidden;
+}
+main .activitylist .container ul li a .top .img{
+    width: 2.4rem;
+    height: 1.6rem;
+    float: left;
+    margin: 0 0.2rem 0 0;
+}
+main .activitylist .container ul li a .top h1{
+    font-size: 0.26rem;
+    font-weight: 700;
+    color: #404040;
+    margin-bottom: 0.2rem;
+}
+main .activitylist .container ul li a .top {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #999999;
+}
+main .activitylist .container ul li a .bottom{
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0.2rem;
+}
+main .activitylist .container ul li a .bottom p{
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+
+/* 分页样式 */
+main .activitylist .page{
+    width: 100%;
+    height: 0.64rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px soli #eee;
+    box-sizing: border-box;
+}
+main .activitylist .page .prev,main .activitylist .page .next{
+    width: 1.6rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.2rem;
+    color: #333;
+}
+main .activitylist .page .prev{
+    border-right: 1px solid #eee;
+}
+main .activitylist .page .next{
+    border-left: 1px solid #eee;
+}
+main .activitylist .page .num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.2rem;
+    color: #999;
+}
+main .activitylist .page .num span:first-child{
+    color: #f5942a;
+}

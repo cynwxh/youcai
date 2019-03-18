@@ -1,0 +1,74 @@
+main{
+    width: 100%;
+    background: #f1f1f1;
+    padding-bottom: 0.6rem;
+    box-sizing: border-box;
+}
+main .title{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .title .img{
+    width: 1.14rem;
+    height: 1.14rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 0.3rem;
+}
+main .title .word{
+    width: 4rem;
+    height: 1rem;
+    
+}
+main .title .word h1{
+    font-size: 0.26rem;
+    color: #fff;
+}
+main .title .word h2{
+    font-size: 0.2rem;
+    color: #fff;
+}
+main .title .word h3{
+    font-size: 0.18rem;
+    color: #fff;
+}
+main .title .button{
+    width: 1.12rem;
+    height: 0.4rem;
+    border-top-left-radius: 0.04rem;
+    border-bottom-left-radius: 0.04rem;
+    background: #f39339;
+    color: #fff;
+    display: flex;
+    font-size: 0.18rem;
+    justify-content: center;
+    align-items: center;
+}
+main .desc{
+    height: 1.04rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .desc h1{
+    width: 100%;
+    border-left: 1px solid #f39339;
+    font-size: 0.26rem;
+    padding-left: 0.2rem;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+main .desc-content {
+    width: 100%;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+main .desc-content .container{
+    font-size: 0.2rem;
+    color: #999;
+    line-height: 0.3rem;
+} 
