@@ -774,7 +774,7 @@ main .view .card .order .page .num span:first-child{
 main .view .card .data .sub-page-tab{
     padding: 0;
 }
-main .view .card .data .password form{
+main .view .card .data .password form,main .view .card .data .info form,main .view .card .data .upload-head form{
     width: 100%;
     height: 2.8rem;
     padding: 0.3rem;
@@ -792,7 +792,7 @@ main .view .card .data .password form{
             justify-content: space-between;
     stroke-linejoin: center;
 }
-main .view .card .data .password form label{
+main .view .card .data .password form label,main .view .card .data .info form label{
     font-size: 0.24rem;
     color: #404040;
     display: -webkit-box;
@@ -805,7 +805,7 @@ main .view .card .data .password form label{
         -ms-flex-align: center;
             align-items: center;
 }
-main .view .card .data .password form label input{
+main .view .card .data .password form label input,main .view .card .data .info form label input{
     width: 5.7rem;
     height: 0.6rem;
     padding: 0.18rem;
@@ -813,7 +813,7 @@ main .view .card .data .password form label input{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-main .view .card .data .password .button-box{
+main .view .card .data .password .button-box,main .view  .card .info .button-box,main .view  .card .upload-head .button-box{
     padding: 0 0.3rem;
     background: #f1f1f1;
     height: 6.4rem;
@@ -821,11 +821,42 @@ main .view .card .data .password .button-box{
         -ms-flex-pack: start;
             justify-content: flex-start;
 }
-main .view .card .data .password .button-box .button{
+main .view .card .data .password .button-box .button,main .view .card .info .button-box .button,main .view .card .upload-head .button-box .button{
     margin: 0.3rem 0 0;
     background: #e4e4e4;
     color: #666;
     font-size: 0.28rem;
+}
+main .view .card .data .info form{
+    height: 7.3rem;
+}
+main .view .card .info .button-box{
+    height: 2.4rem;
+}
+main .view .card .data .info form label:first-child{
+    justify-content: flex-start;
+}
+main .view .card .data .info form label:first-child div{
+    width: 1.4rem;
+    height: 0.6rem;
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    color: #f19344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f19344;
+    border-radius: 0.04rem;
+}
+main .view .card .data .info form label:nth-child(2){
+    justify-content: flex-start;
+}
+main .view .card .data .info form label:nth-child(2) input {
+    width: 0.25rem;
+    margin-left: 0.7rem;
+}
+main .view .card .data .info form label:last-child input{
+    border: 0;
 }
 main .view .card .grow #date,main .view .card .grow #date .layui-laydate,main .view .card .grow #date .layui-laydate-hint,main .view .card .grow #date .layui-laydate .layui-laydate-main,main .view .card .grow #date .layui-laydate .layui-laydate-main .layui-laydate-content table{
     width: 100%;
@@ -904,3 +935,4 @@ main .view .card .grow .button-box .button:first-child{
     background:#f39339;
     color: #fff;
 }
+

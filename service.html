@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>学霸共享方法论</title>
+    <title>服务体系</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="layui/css/layui.css">
-    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/service.css">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -78,38 +77,39 @@
         </ul>
     </header>
     <main>
-        <div class="content">
-            <div class="container">
-                <div class="title">学霸共享方法论</div>
-                <h4>还为学习效率低下苦恼吗? 想要提升英语数学的成绩吗?</h4>
-                <div class="target">
-                    <div class="img">培养目标</div>
-                    <div class="word hidden3">让高考学霸来帮您, 一天 1 块钱，每天打卡 5 道题，365 天为您复制成功经验，建立高效学习体系，升级解题思维，做到 举一反三，决胜高考!</div>
+        <div class="banner" style="background:url(img/banner.jpeg) no-repeat center /cover"></div>
+        <div class="nav">
+            <div class="">上门家教</div>
+            <div class="">在线家教</div>
+            <div class="">留学教练</div>
+            <div class="">外教口语</div>
+        </div>
+        <div class="line"></div>
+        <div class="view">
+            <div class="card">
+                <div class="content" style="background:#fff">
+                    上门家教
                 </div>
-                <h3>立即成为会员，享受更多特权</h3>
-                <div class="table">
-                    <img src="img/table.png" alt="">
+                <div class="content">
+                    在线家教
                 </div>
-                <p><span>专属体验价</span><span>￥888.00</span></p>
+                <div class="content">
+                    留学教练
+                </div>
+                <div class="content">
+                    外交口语
+                </div>
             </div>
         </div>
-        <div class="container button-box">
-            <a href="javascript:;" class="button">购 买 课 程</a>
-        </div>
     </main>
-    <div id="lay" style="display:none">
-        <h1>现在填写预约信息</h1>
-        <h2>专属1对1课程体验</h2>
-        <input type="text" placeholder="学员年级">
-        <input type="text" placeholder="求教学科">
-        <input type="text" placeholder="希望授课时间">
-        <input type="text" placeholder="希望授课地点">
-        <input type="text" placeholder="对教员要求">
-        <label for="">授课方式： 线上<input type="radio">&nbsp;线下<input type="radio"></label>
-        <input type="text" placeholder="联系方式"> 
-        <textarea name="" id="" cols="30" rows="10" placeholder="学员情况描述"></textarea>
-        <input type="submit">
-    </div>
+    <script>
+        // 点击登录注册切换页面
+        $(".nav div").on("click", function () {
+            var id=$(this).index()
+            $("main .line").css("margin-left",id*25+"%")
+            $("main .view .card").css("margin-left","-"+id*100+"%")
+        })
+    </script>
     <footer>
         Copyright © 1998 - 2018 Talenet. All Rights Reserved
     </footer>
